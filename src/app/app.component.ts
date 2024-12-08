@@ -9,9 +9,4 @@ import { RouterOutlet } from '@angular/router'
 })
 
 export class AppComponent {
-    public tasks = [
-        { id: 1, title: 'Task 01' },
-        { id: 2, title: 'Task 02' },
-        { id: 3, title: 'Task 03' }
-    ]
 }

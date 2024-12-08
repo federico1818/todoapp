@@ -13,4 +13,4 @@ start:
 stop:
 	@docker-compose -f ./docker/docker-compose.yml -p angular down
 in:
-	@docker exec -it angular bash
+	@docker exec -it -u $(USER_ID):$(GROUP_ID) angular bash
