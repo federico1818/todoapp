@@ -1,0 +1,14 @@
+services:
+    angular:
+        image: angular:19.0.4
+        container_name: angular
+        restart: always
+        working_dir: /srv
+        build:
+            context: ./angular-19-0-4
+            dockerfile: Dockerfile
+        volumes:
+            - ./..:/srv
+        command: npm run start
+        ports: 
+            - 4200:4200
