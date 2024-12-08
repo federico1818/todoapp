@@ -1,12 +1,17 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core'
+import { RouterOutlet } from '@angular/router'
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+    selector: 'app-root',
+    imports: [RouterOutlet],
+    templateUrl: './app.component.html',
+    styleUrl: './app.component.css'
 })
+
 export class AppComponent {
-  title = 'todoapp';
+    public tasks = [
+        { id: 1, title: 'Task 01' },
+        { id: 2, title: 'Task 02' },
+        { id: 3, title: 'Task 03' }
+    ]
 }
