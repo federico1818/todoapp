@@ -12,3 +12,5 @@ start:
 	@docker-compose -f ./docker/docker-compose.yml -p angular up -d
 stop:
 	@docker-compose -f ./docker/docker-compose.yml -p angular down
+in:
+	@docker exec -it angular bash
