@@ -1,0 +1,30 @@
+nav {
+    font-family: var(--font-family-secondary);
+}
+
+nav ul {
+    display: grid;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius-sm);
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--nav-item-height);
+}
+
+nav ul::before {
+    border: 2px solid;
+    border-radius: var(--border-radius-sm);
+    content: "";
+    width: var(--nav-item-width);
+    height: var(--nav-item-height);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+}

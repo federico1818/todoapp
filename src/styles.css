@@ -4,6 +4,8 @@
     --text-color: #402961;
     --border-color: #f2f1f4;
     --border-radius-sm: 4px;
+    --font-family-primary: "Noto Serif", serif;
+    --font-family-secondary: "Roboto", sans-serif;
 }
 
 * {
@@ -17,7 +19,7 @@ html, body {
 
 body {
     color: var(--text-color);
-    font-family: "Noto Serif", serif;
+    font-family: var(--font-family-primary);
 }
 
 ul {
