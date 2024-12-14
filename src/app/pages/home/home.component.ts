@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, signal } from '@angular/core'
 
 @Component({
     selector: 'app-home',
@@ -8,9 +8,9 @@ import { Component } from '@angular/core'
 })
 
 export class HomeComponent {
-    public tasks = [
+    public tasks = signal([
         { id: 1, title: 'Task 01' },
         { id: 2, title: 'Task 02' },
         { id: 3, title: 'Task 03' }
-    ]
+    ])
 }

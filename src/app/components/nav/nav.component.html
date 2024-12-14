@@ -1,7 +1,31 @@
 <nav>
-    <ul>
-        <li>All</li>
-        <li>To completed</li>
-        <li>Completed</li>
+    <ul [class]="activeRoute()">
+        <li>
+            <a 
+                routerLink="/" 
+                routerLinkActive="active" 
+                [routerLinkActiveOptions]="{ exact: true }"
+            >
+                All
+            </a>
+        </li>
+        <li>
+            <a 
+                routerLink="/to-complete" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+            >
+                To complete
+            </a>
+        </li>
+        <li>
+            <a 
+                routerLink="/completed"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: true }"
+            >
+                Completed
+            </a>
+        </li>
     </ul>
 </nav>

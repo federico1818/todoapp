@@ -13,9 +13,20 @@ nav ul {
 
 nav ul li {
     display: flex;
-    align-items: center;
-    justify-content: center;
     height: var(--nav-item-height);
+    width: 100%;
+}
+
+nav ul li a {
+    display: inherit;
+    width: inherit;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a.active {
+    font-weight: bold;
 }
 
 nav ul::before {
@@ -27,4 +38,13 @@ nav ul::before {
     position: absolute;
     top: -2px;
     left: -2px;
+    transition: transform 1s;
+}
+
+nav ul.to-complete::before {
+    transform: translateX(158px);
+}
+
+nav ul.completed::before {
+    transform: translateX(318px);
 }
